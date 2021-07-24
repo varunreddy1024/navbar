@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample</title>
+    <link rel="stylesheet" href="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script defer src="https://kit.fontawesome.com/b8be333c62.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .strip {
+            position: fixed;
+            top: 25%;
+            right: 0%;
+            height: auto;
+            width: auto;
+            padding: 4px 8px;
+            background-color: #fb9d50;
+            z-index: 500;
+            border-radius: 10px 0px 0px 10px;
+            transition: 0.5s;
+        }
+        
+        .fix-logo {
+            height: 35px;
+            width: 35px;
+            margin: 4px 0px 4px 0px;
+            border: olive solid 2px;
+        }
+        
+        .details {
+            display: none;
+        }
+        
+        .strip:hover .details {
+            width: 75px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        .nav-grp {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            padding: 20px;
+        }
+        
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        
+        .tecenter {
+            text-align: center;
+        }
+        
+        .bod {
+            background-color: #2a2a72;
+            background-image: linear-gradient(315deg, #2a2a72 0%, #048cdb 74%);
+        }
+        
+        .bod-nav {
+            background-color: #ffffff;
+            border: 0.5px solid black;
+            box-shadow: 0px 2px #888888;
+            font-size: 20px;
+        }
+        
+        .nav-grp:hover {
+            color: #227fe6;
+        }
+        
+        .abcd {
+            position: relative;
+            height: 1px;
+            transition: 0.3s;
+        }
+        
+        .nav-drop-down {
+            position: absolute;
+            z-index: 100;
+            width: 100vw;
+            display: none;
+        }
+        
+        .sam-nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .sam-sub {
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+        
+        .matter {
+            margin: 40px 400px 40px 30px;
+            color: #ffffff;
+        }
+        
+        .image {
+            background-color: aqua;
+            height: 200px;
+            width: 600px;
+            margin: 40px 40px 40px 80px;
+        }
+        
+        .heading {
+            font-weight: bold;
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="flex-row bod-nav">
+        <div class=" flex-row">
+            <div onmouseover="visible_nav(0)" class="nav-grp">Home</div>
+            <div onmouseover="visible_nav(1)" class="nav-grp ">About Us</div>
+            <div onmouseover="visible_nav(2)" class="nav-grp ">Policies</div>
+            <div onmouseover="visible_nav(3)" class="nav-grp ">Industrial Info</div>
+            <div onmouseover="visible_nav(4)" class="nav-grp">GIS</div>
+            <div onmouseover="visible_nav(5)" class="nav-grp">E-servies</div>
+            <div onmouseover="visible_nav(6)" class="nav-grp">Resource</div>
+            <div onmouseover="visible_nav(7)" class="nav-grp">Available Plot</div>
+            <div onmouseover="visible_nav(8)" class="nav-grp">Contact</div>
+        </div>
+    </div>
+    <div class="abcd">
+
+        <div class="bod nav-drop-down">
+            <div class="sam-nav">
+                <div class="image"> varun</div>
+                <div class="matter">
+                    <div class="heading">
+                        <h2>VARUN REDDY</h2>
+                    </div>
+                    <div class="sam-sub">GIS</div>
+                    <div class="sam-sub">E-servies</div>
+                    <div class="sam-sub">Resource</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="bod nav-drop-down">
+            <div class="sam-nav">
+                <div class="image"> varun</div>
+                <div class="matter">
+                    <div class="heading">
+                        <h2>VARUN REDDY</h2>
+                    </div>
+                    <div class="sam-sub">GIS</div>
+                    <div class="sam-sub">E-servies</div>
+                    <div class="sam-sub">Resource</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bod nav-drop-down">
+            <div class="sam-nav">
+                <div class="image"> varun</div>
+                <div class="matter">
+                    <div class="heading">
+                        <h2>VARUN REDDY</h2>
+                    </div>
+                    <div class="sam-sub">GIS</div>
+                    <div class="sam-sub">E-servies</div>
+                    <div class="sam-sub">Resource</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bod nav-drop-down">
+            <div class="sam-nav">
+                <div class="image"> varun</div>
+                <div class="matter">
+                    <div class="heading">
+                        <h2>VARUN REDDY</h2>
+                    </div>
+                    <div class="sam-sub">GIS</div>
+                    <div class="sam-sub">E-servies</div>
+                    <div class="sam-sub">Resource</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bod nav-drop-down">
+            <div class="sam-nav">
+                <div class="image"> varun</div>
+                <div class="matter">
+                    <div class="heading">VARUN REDDY</div>
+                    <div class="sam-sub">GIS</div>
+                    <div class="sam-sub">E-servies</div>
+                    <div class="sam-sub">Resource</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bod nav-drop-down">
+            <div class="sam-nav">
+                <div class="image"> varun</div>
+                <div class="matter">
+                    <div class="heading">VARUN REDDY</div>
+                    <div class="sam-sub">GIS</div>
+                    <div class="sam-sub">E-servies</div>
+                    <div class="sam-sub">Resource</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bod nav-drop-down">
+            <div class="sam-nav">
+                <div class="image"> varun</div>
+                <div class="matter">
+                    <div class="heading">VARUN REDDY</div>
+                    <div class="sam-sub">GIS</div>
+                    <div class="sam-sub">E-servies</div>
+                    <div class="sam-sub">Resource</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bod nav-drop-down">
+            <div class="sam-nav">
+                <div class="image"> varun</div>
+                <div class="matter">
+                    <div class="heading">VARUN REDDY</div>
+                    <div class="sam-sub">GIS</div>
+                    <div class="sam-sub">E-servies</div>
+                    <div class="sam-sub">Resource</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bod nav-drop-down">
+            <div class="sam-nav">
+                <div class="image"> varun</div>
+                <div class="matter">
+                    <div class="heading">VARUN REDDY</div>
+                    <div class="sam-sub">GIS</div>
+                    <div class="sam-sub">E-servies</div>
+                    <div class="sam-sub">Resource</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div onmouseover="noneall_nav()">
+        <div class="strip">
+            <div class="flex-row">
+                <div class="fix-logo"><i class="fas fa-sign-in-alt"></i></div>
+                <div class="details">
+                    <p>web mail</p>
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="fix-logo"><i class="fas fa-sign-in-alt"></i></div>
+                <div class="details">
+                    <p>office login</p>
+                </div>
+            </div>
+        </div>
+
+        <br> <br> <br> <br> <br> <br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quasi corporis ipsum alias sapiente nulla totam molestiae, enim atque, consequatur ipsa? Sunt sequi in soluta amet, consequuntur placeat asperiores omnis quam perspiciatis eos! Dicta
+            accusantium quasi facere aliquam explicabo fugit, molestias nihil temporibus! Deleniti, praesentium ducimus blanditiis mollitia architecto eum officiis iure ab neque quae sapiente! Sunt quis cum voluptatum dolores culpa repudiandae possimus
+            reprehenderit laboriosam autem nesciunt, rem nam, saepe consequatur unde sequi perferendis quos molestiae ex. Et nobis culpa sunt, explicabo obcaecati ut dolorum praesentium sint a deserunt, tempora maxime nesciunt totam. Odio, distinctio,
+            maxime impedit culpa doloribus maiores velit excepturi delectus tenetur eius exercitationem sunt, saepe quibusdam quidem sit laboriosam eum amet enim quo mollitia debitis asperiores. Aperiam maxime magnam omnis, pariatur, asperiores eligendi
+            sit cum numquam libero odit voluptatem quia harum soluta, architecto accusamus? Hic explicabo, amet repudiandae itaque quidem sapiente nulla nemo. Ducimus velit obcaecati dolor tempore debitis blanditiis nam! Itaque libero pariatur, aliquid
+            nostrum consectetur ab assumenda eius, expedita ad deserunt, facilis soluta molestias! Sequi fuga placeat, dicta est iure totam dolor fugit nesciunt veritatis iusto, assumenda, quaerat id eveniet. Quod perferendis sed earum iure, recusandae
+            aut officiis pariatur doloribus possimus omnis ex consequatur, amet consequuntur praesentium ad cum culpa enim vero commodi libero quam blanditiis illum! Eos iure dicta quibusdam saepe consectetur, eum maxime laborum, ratione quos, ex tempora
+            qui temporibus. Magnam, accusantium enim! Fugit doloremque voluptatum iure sit. Aspernatur eos repellat quo voluptates, nostrum, reiciendis quod, iure aliquam laudantium veniam deleniti atque qui rem cumque quae inventore voluptatem veritatis.
+            Aut cumque asperiores, a tempora voluptates odio esse assumenda quisquam at aspernatur doloremque? Nulla aliquid debitis aut perspiciatis similique officiis voluptas dignissimos, magni tempore nihil quae aspernatur suscipit quisquam veritatis
+            animi aperiam omnis voluptates! Modi ipsum sint sed, dolorem accusamus cum voluptates quibusdam temporibus placeat in quasi, obcaecati rem! Ea nulla repudiandae sed quidem reiciendis unde similique esse perspiciatis dolor quisquam maiores
+            temporibus doloribus, sunt recusandae delectus expedita voluptates aut eligendi eius. Aliquid amet soluta blanditiis recusandae impedit quaerat rerum voluptates molestiae exercitationem, libero eveniet magnam natus error ipsam omnis ad deserunt
+            deleniti aperiam, rem dolores in! Cum quidem veritatis temporibus alias illum nisi, aperiam voluptas impedit, voluptatibus ad ullam a dolorum eaque sint vitae laudantium dignissimos ratione aspernatur vel sit, eum quo. Repellendus eligendi
+            odit expedita modi dolores corrupti nihil, consequatur temporibus laborum cum exercitationem nesciunt itaque molestiae ipsa at debitis, deleniti incidunt! Officiis nostrum laudantium rerum saepe enim ad aut nihil non placeat et quibusdam veniam
+            amet commodi autem, iure mollitia, ab quos atque repellat illo quis quo obcaecati magnam provident! Inventore unde nihil repellendus harum illo, similique ab dolorem non expedita tenetur, consequuntur cum eaque suscipit obcaecati adipisci
+            aspernatur enim voluptatum consectetur magnam? Expedita optio alias voluptate mollitia necessitatibus, cupiditate sint, laborum et perspiciatis vero ipsa, iusto recusandae vel molestias natus aut harum officia? Saepe iure eos eligendi! Voluptas
+            enim sed possimus impedit error nam animi eos, odit debitis architecto? Minima laudantium distinctio nulla ipsa ipsam quos corporis est nam!'</p>
+    </div>
+    <script>
+        function noneall_nav() {
+            var cla = document.getElementsByClassName("nav-drop-down");
+            for (var i = 0; i < cla.length; i++) {
+                cla[i].style.display = "none";
+            }
+        }
+
+        function visible_nav(n) {
+            var cla = document.getElementsByClassName("nav-drop-down");
+            for (var i = 0; i < cla.length; i++) {
+                cla[i].style.display = "none";
+            }
+            cla[n].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
